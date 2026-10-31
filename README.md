@@ -2,6 +2,12 @@
 
 A headless Django CMS and REST API for publishing technical articles. It demonstrates authentication, permissions, moderation, search, scheduling, engagement tracking, PostgreSQL, API documentation, structured logging, and frontend-ready API design.
 
+## Frontend preview
+
+The companion Angular client is available in [angular-blog-cms](https://github.com/Pawan2804/angular-blog-cms).
+
+![Angular Blog CMS homepage](./docs/frontend-home.png)
+
 ## Features
 
 - Posts with draft, published, scheduled, featured, and archived states
@@ -52,6 +58,8 @@ For a temporary test run without PostgreSQL:
 ```bash
 USE_SQLITE_FOR_TESTS=1 python manage.py test
 ```
+
+The current test suite covers authentication, permissions, post visibility, validation, likes, comments, profiles, view counts, logging, and error responses.
 
 ## API endpoints
 
